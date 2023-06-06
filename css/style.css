@@ -45,7 +45,6 @@ section > p {
 
 .btn {
   display: inline-block;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 0.75rem 1rem;
   border-radius: 0.4rem;
