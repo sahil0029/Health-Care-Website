@@ -35,3 +35,28 @@ section {
 .btn {
   @include button($textColor: $white-color, $backgroundColor: $secondary-color);
 }
+
+.btn-primary  {
+  @include button($white-color, $primary-color);
+}
+
+// MEDIA QUIRES MEDIUM DEVICES
+
+  @media screen and (max-width: 1024px) {
+    .container {
+      width: $container-md;
+    }
+    section {
+      & > p {
+        width: 55%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .section {
+      & > p {
+        width: $container-md;
+      }
+    }
+  }
