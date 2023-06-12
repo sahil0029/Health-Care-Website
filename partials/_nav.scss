@@ -1,0 +1,38 @@
+nav {
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    z-index: 10;
+    display: grid;
+    background: red;
+    place-items: center;
+    @include gradientBackground;
+    box-shadow: 0 1rem 1rem rgba($black-color , 0.1);
+
+    .container {
+        background-color: white;
+        justify-content: space-between;
+        align-items: center;
+
+        ul{
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        button {
+            display: none;
+        }
+
+        a{
+            color: $white-color;
+            font-weight: 400;
+            font-size: 0.9rem;
+        }
+
+        .nav__logo h3 {
+            color: $white-color;
+        }
+    }
+}
+

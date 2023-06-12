@@ -1,5 +1,14 @@
-@use "partials/_mixins.scss";
-
+// @use "partials/_mixins.scss";
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat" ,  sans-serif;
+  line-height: 1.5;
+  color: $dark-color;
+  background-color: rgba($primary-color-variant, 0.1);
+  user-select: none;
+}
 .container {
   width: $container-lg;
   margin: 0 auto;
@@ -27,7 +36,7 @@ section {
 
   & > p {
     text-align: center;
-    width: 45%;
+    width: 42%;
     margin: 0.6rem auto 2.5rem;
   }
 }
@@ -54,7 +63,7 @@ section {
   }
 
   @media screen and (max-width: 600px) {
-    .section {
+    section {
       & > p {
         width: $container-md;
       }
