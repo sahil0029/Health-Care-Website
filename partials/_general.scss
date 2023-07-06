@@ -3,7 +3,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Montserrat" ,  sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   color: $dark-color;
   background-color: rgba($primary-color-variant, 0.1);
@@ -45,27 +45,27 @@ section {
   @include button($textColor: $white-color, $backgroundColor: $secondary-color);
 }
 
-.btn-primary  {
+.btn-primary {
   @include button($white-color, $primary-color);
 }
 
 // MEDIA QUIRES MEDIUM DEVICES
 
-  @media screen and (max-width: 1024px) {
-    .container {
+@media screen and (max-width: 1024px) {
+  .container {
+    width: $container-md;
+  }
+  section {
+    & > p {
+      width: 55%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    & > p {
       width: $container-md;
     }
-    section {
-      & > p {
-        width: 55%;
-      }
-    }
   }
-
-  @media screen and (max-width: 600px) {
-    section {
-      & > p {
-        width: $container-md;
-      }
-    }
-  }
+}
